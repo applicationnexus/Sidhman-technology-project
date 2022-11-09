@@ -1,0 +1,11 @@
+<div class="slider container py-5">
+  <swiper [slidesPerView]="1" [spaceBetween]="10" [navigation]="true" [pagination]="{ clickable: true }"
+    [autoplay]="{ delay: 1000 }">
+      <ng-template swiperSlide *ngFor="let text of data">
+        <div class="main-div p-4">
+          <h5 class="text-center p-4 h1 font-weight-bold">{{text.title}}</h5>
+          <p class="h5">{{text.desc}}</p>
+        </div>
+      </ng-template>
+  </swiper>
+</div>
